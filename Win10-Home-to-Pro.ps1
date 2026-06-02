@@ -18,11 +18,12 @@
 
     Log:    C:\ProgramData\Win10ProUpgrade\upgrade.log
     Author: Kosta Wadenfalk
+    Website: https://mrolof.dev/
 #>
 
 param(
     [string]$GenericKey = 'VK7JG-NPHTM-C97JM-9MPGT-3V66T',
-    [string]$RealKey    = '',
+    [string]$RealKey    = 'YPMTF-KPN8T-67GVQ-DX67Y-F9CKM',
     [switch]$KeepNetwork,
     [switch]$SkipActivation
 )
