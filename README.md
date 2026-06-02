@@ -2,7 +2,7 @@
 
 Windows and Microsoft endpoint admin scripts. Use at your own risk, read before you run.
 
-## Win10-Home-to-Pro-Remote.ps1
+## Win10-Home-to-Pro.ps1
 
 Automated Windows 10/11 Home to Pro edition upgrade. Built for the case where you need Pro to do something Home blocks (Intune/MDM enrollment, Entra join, domain join, BitLocker, Hyper-V, Group Policy) and you want the whole upgrade to run hands-off, local or remote.
 
@@ -14,10 +14,10 @@ Uses `changepk.exe`, not `DISM /Set-Edition` (the latter returns error 50 on a r
 
 ```powershell
 # Normal run: edition change + activation
-.\Win10-Home-to-Pro-Remote.ps1 -RealKey 'XXXXX-XXXXX-XXXXX-XXXXX-XXXXX'
+.\Win10-Home-to-Pro.ps1 -RealKey 'XXXXX-XXXXX-XXXXX-XXXXX-XXXXX'
 
 # Test run in a VM: edition change only, no licensed key consumed
-.\Win10-Home-to-Pro-Remote.ps1 -SkipActivation
+.\Win10-Home-to-Pro.ps1 -SkipActivation
 ```
 
 | Parameter | Purpose |
