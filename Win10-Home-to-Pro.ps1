@@ -1,7 +1,7 @@
 #requires -RunAsAdministrator
 <#
-    Win10/11 Home -> Pro upgrade for remote sessions you can't sit and watch.
-
+    Win10/11 Home -> Pro upgrade
+    
     Two stages around a reboot. Stage 1 kicks off the edition change, drops a
     startup task to finish up, takes the network down and reboots. Stage 2 runs
     after the reboot, puts the network back, waits for the edition to actually be
